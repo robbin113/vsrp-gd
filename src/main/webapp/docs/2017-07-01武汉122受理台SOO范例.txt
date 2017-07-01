@@ -1,0 +1,5 @@
+
+受理台连接范例  http://localhost:8080/vsrp-gd/login.do?method=login&zdxxdm=G001&zby=admin
+
+
+格式：http://挨批:端口:vsrp-gd/login.do?method=login&zdxxdm=站点信息代码&zby=当前值班员

@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd"
+>
+
+    <!-- 数据源 -->
+    <!-- 不需要安装任何数据库的客户端程序，只需要按照格式配置即可。当然程序提供用客户端的连接方式，详见下面的注释 -->
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+        <property name="driverClass" value="oracle.jdbc.driver.OracleDriver"/>
+        <property name="jdbcUrl" value="jdbc:oracle:thin:@${db.jdbcUrl}"/>
+        <property name="user" value="${db.user}"/>
+        <property name="password" value="${db.password}"/>
+    </bean>
+
+    <!-- SessionFactory -->
+    <bean id="sessionFactory"
+          class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <!-- ibernate的相关属性配置 -->
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</prop>
+                <!--<prop key="hibernate.hbm2ddl.auto">none</prop>-->
+                <prop key="hibernate.show_sql">${db.show_sql}</prop>
+                <prop key="hibernate.format_sql">${db.format_sql}</prop>
+                <prop key="hibernate.jdbc.use_streams_for_binary">true</prop>
+                <prop key="hibernate.jdbc.fetch_size">1</prop>
+                <prop key="hibernate.jdbc.batch_size">0</prop>
+                <prop key="current_session_context_class">thread</prop>
+                <prop key="javax.persistence.validation.mode">none</prop>
+                <!-- 二级缓存，3年内这个肯定用不到 -->
+                <prop key="hibernate.cache.use_second_level_cache">false</prop>
+                <prop key="hibernate.cache.use_query_cache">false</prop>
+                <!--全文索引-->
+                <prop key="hibernate.search.default.directory_provider">filesystem</prop>
+                <prop key="hibernate.search.default.indexBase">D:/index</prop>
+                <prop key="hibernate.search.analyzer">org.apache.lucene.analysis.cjk.CJKAnalyzer</prop>
+                <prop key="hibernate.connection.url">jdbc:oracle:thin:@//localhost:1521/orcl</prop>
+                <prop key="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</prop>
+            </props>
+        </property>
+        <!-- 实体类扫描器 -->
+        <property name="packagesToScan">
+            <value>com.zxit.model</value>
+        </property>
+    </bean>
+
+
+    <bean id="hibernateTemplate" class="org.springframework.orm.hibernate4.HibernateTemplate">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+
+    <!--配置一个JdbcTemplate实例 -->
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <!-- 事务管理器 -->
+    <bean id="txManager"
+          class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+
+    <!-- 事务注解 -->
+    <tx:annotation-driven transaction-manager="txManager" proxy-target-class="false"/>
+    <tx:advice id="txAdvice" transaction-manager="txManager">
+        <tx:attributes>
+            <tx:method name="find*" read-only="true"/>
+            <tx:method name="load*" read-only="true"/>
+            <tx:method name="init*" read-only="true"/>
+            <tx:method name="*"/>  <!-- 其他事务在require中运行 -->
+        </tx:attributes>
+    </tx:advice>
+
+    <!-- aop事务切面 -->
+    <aop:config>
+        <aop:pointcut expression="execution(public * com.zxit.service.impl.*.*(..))" id="businessService"/>
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="businessService"/>
+    </aop:config>
+
+
+    <!-- 将多个配置文件读取到容器中，交给Spring管理 -->
+    <context:property-placeholder location="classpath*:config.properties" file-encoding="UTF-8"/>
+
+    <!--     加载系统配置 -->
+    <bean id="systemConfig" class="com.zxit.model.SystemConfig">
+        <property name="checker" value="${sys.checker}"></property>
+        <property name="systemTitle" value="${sys.systemTitle}"></property>
+        <property name="printTitle" value="${sys.printTitle}"></property>
+        <property name="debugMode" value="${sys.debugMode}"></property>
+        <property name="filePath" value="${sys.filePath}"></property>
+        <property name="fileType" value="${sys.fileType}"></property>
+        <property name="maxPerPage" value="${sys.maxPerPage}"></property>
+        <!-- 		地图 -->
+        <property name="mapType" value="${map.type}"></property>
+        <property name="mapUrl" value="${map.url}"></property>
+        <property name="mapOffline" value="${map.offline}"></property>
+        <!--GSS-->
+        <property name="baseUrl" value="${net.baseUrl}"></property>
+    </bean>
+
+</beans>

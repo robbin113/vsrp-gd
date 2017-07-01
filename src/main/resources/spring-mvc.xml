@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       default-autowire="byName"
+       xsi:schemaLocation="http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+    <!-- 支持AOP -->
+    <aop:aspectj-autoproxy/>
+
+    <!-- 主题扫描器 -->
+    <context:component-scan base-package="com.zxit"/>
+
+    <!-- 全局拦截器 -->
+    <mvc:interceptors>
+        <bean class="com.zxit.interceptor.MVCInterceptor"/>
+    </mvc:interceptors>
+
+    <bean
+            class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+        <property name="cacheSeconds" value="0"/>
+        <property name="messageConverters">
+            <list>
+                <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter"></bean>
+                <bean class="org.springframework.http.converter.StringHttpMessageConverter"/>
+                <bean class="org.springframework.http.converter.ByteArrayHttpMessageConverter"/>
+                <bean class="org.springframework.http.converter.xml.SourceHttpMessageConverter"/>
+                <bean class="org.springframework.http.converter.FormHttpMessageConverter"/>
+            </list>
+        </property>
+    </bean>
+
+    <!-- 启动mvc注解模式 -->
+    <mvc:annotation-driven>
+        <mvc:message-converters>
+            <!-- 加入ajax乱码过滤，使其支持utf-8的有效返回值 -->
+            <bean class="org.springframework.http.converter.StringHttpMessageConverter">
+                <property name="supportedMediaTypes">
+                    <list>
+                        <value>text/html;charset=UTF-8</value>
+                    </list>
+                </property>
+            </bean>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
+
+    <!-- 对模型视图名称的解析，即在模型视图名称添加前后缀 -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="suffix" value=".jsp"></property>
+    </bean>
+    <!-- 时间格式转换 -->
+    <bean id="conversionService"
+          class="org.springframework.format.support.FormattingConversionServiceFactoryBean"/>
+
+    <!-- 处理文件上传 批量导入的时候能用用 其他估计也用不到 -->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="defaultEncoding" value="utf-8"/>
+        <property name="maxInMemorySize" value="10240"/>
+        <property name="uploadTempDir" value="/download/"/>
+        <property name="maxUploadSize" value="-1"/>
+    </bean>
+
+
+</beans>

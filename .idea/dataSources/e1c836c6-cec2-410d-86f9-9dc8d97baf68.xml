@@ -1,0 +1,2269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="pygis">
+  <database-model serializer="dbm" rdbms="ORACLE" format-version="2.6">
+    <schema id="1" name="PYGIS">
+      <object-id>92</object-id>
+      <created-timestamp>2017-05-11.16:28:03</created-timestamp>
+      <modified-timestamp>2017-06-22.10:52:55</modified-timestamp>
+      <visible>1</visible>
+      <introspection-timestamp>2017-06-30.11:22:17</introspection-timestamp>
+    </schema>
+    <schema id="2" name="PUBLIC">
+      <object-id>1</object-id>
+    </schema>
+    <schema id="3" name="SYS"/>
+    <schema id="4" name="SYSTEM">
+      <object-id>5</object-id>
+    </schema>
+    <schema id="5" name="OUTLN">
+      <object-id>9</object-id>
+    </schema>
+    <schema id="6" name="DIP">
+      <object-id>14</object-id>
+    </schema>
+    <schema id="7" name="ORACLE_OCM">
+      <object-id>21</object-id>
+    </schema>
+    <schema id="8" name="DBSNMP">
+      <object-id>30</object-id>
+    </schema>
+    <schema id="9" name="APPQOSSYS">
+      <object-id>31</object-id>
+    </schema>
+    <schema id="10" name="WMSYS">
+      <object-id>32</object-id>
+    </schema>
+    <schema id="11" name="EXFSYS">
+      <object-id>42</object-id>
+    </schema>
+    <schema id="12" name="CTXSYS">
+      <object-id>43</object-id>
+    </schema>
+    <schema id="13" name="XDB">
+      <object-id>45</object-id>
+    </schema>
+    <schema id="14" name="ANONYMOUS">
+      <object-id>46</object-id>
+    </schema>
+    <schema id="15" name="ORDSYS">
+      <object-id>53</object-id>
+    </schema>
+    <schema id="16" name="ORDDATA">
+      <object-id>54</object-id>
+    </schema>
+    <schema id="17" name="ORDPLUGINS">
+      <object-id>55</object-id>
+    </schema>
+    <schema id="18" name="SI_INFORMTN_SCHEMA">
+      <object-id>56</object-id>
+    </schema>
+    <schema id="19" name="MDSYS">
+      <object-id>57</object-id>
+    </schema>
+    <schema id="20" name="OLAPSYS">
+      <object-id>61</object-id>
+    </schema>
+    <schema id="21" name="MDDATA">
+      <object-id>65</object-id>
+    </schema>
+    <schema id="22" name="SPATIAL_WFS_ADMIN_USR">
+      <object-id>67</object-id>
+    </schema>
+    <schema id="23" name="SPATIAL_CSW_ADMIN_USR">
+      <object-id>70</object-id>
+    </schema>
+    <schema id="24" name="SYSMAN">
+      <object-id>72</object-id>
+    </schema>
+    <schema id="25" name="MGMT_VIEW">
+      <object-id>74</object-id>
+    </schema>
+    <schema id="26" name="FLOWS_FILES">
+      <object-id>75</object-id>
+    </schema>
+    <schema id="27" name="APEX_PUBLIC_USER">
+      <object-id>76</object-id>
+    </schema>
+    <schema id="28" name="APEX_030200">
+      <object-id>78</object-id>
+    </schema>
+    <schema id="29" name="OWBSYS">
+      <object-id>79</object-id>
+    </schema>
+    <schema id="30" name="OWBSYS_AUDIT">
+      <object-id>83</object-id>
+    </schema>
+    <schema id="31" name="SCOTT">
+      <object-id>84</object-id>
+    </schema>
+    <schema id="32" name="HR">
+      <object-id>85</object-id>
+    </schema>
+    <schema id="33" name="OE">
+      <object-id>86</object-id>
+    </schema>
+    <schema id="34" name="IX">
+      <object-id>87</object-id>
+    </schema>
+    <schema id="35" name="SH">
+      <object-id>88</object-id>
+    </schema>
+    <schema id="36" name="PM">
+      <object-id>89</object-id>
+    </schema>
+    <schema id="37" name="BI">
+      <object-id>90</object-id>
+    </schema>
+    <schema id="38" name="CG110">
+      <object-id>94</object-id>
+    </schema>
+    <schema id="39" name="GIS1">
+      <object-id>98</object-id>
+    </schema>
+    <schema id="40" name="GIS2">
+      <object-id>99</object-id>
+    </schema>
+    <schema id="41" name="JQYP">
+      <object-id>100</object-id>
+    </schema>
+    <schema id="42" name="ZXITCACHE">
+      <object-id>101</object-id>
+    </schema>
+    <schema id="43" name="PY110">
+      <object-id>104</object-id>
+    </schema>
+    <schema id="44" name="JNG120">
+      <object-id>106</object-id>
+    </schema>
+    <schema id="45" name="QYGIS">
+      <object-id>110</object-id>
+    </schema>
+    <schema id="46" name="QY110">
+      <object-id>111</object-id>
+    </schema>
+    <schema id="47" name="TEST">
+      <object-id>112</object-id>
+    </schema>
+    <schema id="48" name="NB120">
+      <object-id>114</object-id>
+    </schema>
+    <schema id="49" name="ZZ120">
+      <object-id>115</object-id>
+    </schema>
+    <schema id="50" name="XS$NULL">
+      <object-id>2147483638</object-id>
+    </schema>
+    <sequence id="51" parent="1" name="HIBERNATE_SEQUENCE">
+      <object-id>78157</object-id>
+      <created-timestamp>2017-05-13.00:35:42</created-timestamp>
+      <modified-timestamp>2017-05-13.00:35:42</modified-timestamp>
+      <min-value>1</min-value>
+      <increment-by>1</increment-by>
+      <next-value>1</next-value>
+    </sequence>
+    <table id="52" parent="1" name="ALARM_FAVORITE">
+      <object-id>83869</object-id>
+      <comment>个人关注的警情信息列表</comment>
+      <created-timestamp>2017-06-19.23:37:39</created-timestamp>
+      <modified-timestamp>2017-06-20.16:59:17</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="53" parent="1" name="ALARM_INFO">
+      <object-id>83873</object-id>
+      <created-timestamp>2017-06-19.23:37:40</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:40</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="54" parent="1" name="B_TRAC">
+      <object-id>83875</object-id>
+      <created-timestamp>2017-06-19.23:37:40</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:40</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="55" parent="1" name="B_TRAC_HIS">
+      <object-id>83880</object-id>
+      <comment>轨迹历史记录</comment>
+      <created-timestamp>2017-06-19.23:37:40</created-timestamp>
+      <modified-timestamp>2017-06-20.16:59:17</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="56" parent="1" name="GPS_SS">
+      <object-id>83944</object-id>
+      <created-timestamp>2017-06-21.16:12:23</created-timestamp>
+      <modified-timestamp>2017-06-21.16:13:11</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="57" parent="1" name="STYLE_ALM_COLOR">
+      <object-id>83886</object-id>
+      <comment>预警样式表</comment>
+      <created-timestamp>2017-06-19.23:37:40</created-timestamp>
+      <modified-timestamp>2017-06-20.16:59:17</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="58" parent="1" name="STYLE_OPTIONS">
+      <object-id>83888</object-id>
+      <comment>描点样式</comment>
+      <created-timestamp>2017-06-19.23:37:40</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:40</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="59" parent="1" name="STYLE_PICS">
+      <object-id>83890</object-id>
+      <comment>图片库</comment>
+      <created-timestamp>2017-06-19.23:37:40</created-timestamp>
+      <modified-timestamp>2017-06-20.16:59:17</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="60" parent="1" name="SYS_CATEGORY">
+      <object-id>83892</object-id>
+      <comment>菜单表</comment>
+      <created-timestamp>2017-06-19.23:37:40</created-timestamp>
+      <modified-timestamp>2017-06-20.16:59:17</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="61" parent="1" name="SYS_CATEGORYPERMISSION">
+      <object-id>83894</object-id>
+      <created-timestamp>2017-06-19.23:37:40</created-timestamp>
+      <modified-timestamp>2017-06-20.16:59:17</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="62" parent="1" name="SYS_CODE">
+      <object-id>83895</object-id>
+      <comment>编码表</comment>
+      <created-timestamp>2017-06-19.23:37:40</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:40</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="63" parent="1" name="SYS_CODE_TYPE">
+      <object-id>83896</object-id>
+      <comment>编码类型表</comment>
+      <created-timestamp>2017-06-19.23:37:40</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:40</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="64" parent="1" name="SYS_LOGS">
+      <object-id>83897</object-id>
+      <comment>系统日志表</comment>
+      <created-timestamp>2017-06-19.23:37:40</created-timestamp>
+      <modified-timestamp>2017-06-20.16:59:17</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="65" parent="1" name="SYS_ORG_INFO">
+      <object-id>83901</object-id>
+      <comment>基础表_单位_单位表</comment>
+      <created-timestamp>2017-06-19.23:37:41</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:41</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="66" parent="1" name="SYS_PART_INFO">
+      <object-id>83905</object-id>
+      <comment>系统软件信息表</comment>
+      <created-timestamp>2017-06-19.23:37:41</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:41</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="67" parent="1" name="SYS_ROLES">
+      <object-id>83907</object-id>
+      <comment>系统角色表</comment>
+      <created-timestamp>2017-06-19.23:37:41</created-timestamp>
+      <modified-timestamp>2017-06-20.16:59:18</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="68" parent="1" name="WGIS_CAR_INFO">
+      <object-id>83909</object-id>
+      <comment>车辆信息表</comment>
+      <created-timestamp>2017-06-19.23:37:41</created-timestamp>
+      <modified-timestamp>2017-06-22.10:52:55</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="69" parent="1" name="WGIS_EMT_INFO">
+      <object-id>83915</object-id>
+      <comment>设备终端信息表</comment>
+      <created-timestamp>2017-06-19.23:37:41</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:41</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="70" parent="1" name="WGIS_FILES">
+      <object-id>83919</object-id>
+      <comment>MIS_文件信息管理表。管理附件、图片、文档等文件信息</comment>
+      <created-timestamp>2017-06-19.23:37:41</created-timestamp>
+      <modified-timestamp>2017-06-20.16:59:18</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="71" parent="1" name="WGIS_IPLIST">
+      <object-id>83921</object-id>
+      <comment>允许访问WGIS的IP列表</comment>
+      <created-timestamp>2017-06-19.23:37:41</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:41</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="72" parent="1" name="WGIS_MEMS">
+      <object-id>82740</object-id>
+      <comment>人力资源</comment>
+      <created-timestamp>2017-06-13.21:54:56</created-timestamp>
+      <modified-timestamp>2017-06-20.11:47:38</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="73" parent="1" name="WGIS_MONITOR">
+      <object-id>83923</object-id>
+      <comment>监控信息表</comment>
+      <created-timestamp>2017-06-19.23:37:41</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:41</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="74" parent="1" name="WGIS_PATROL_AREA">
+      <object-id>83927</object-id>
+      <comment>巡防区设定</comment>
+      <created-timestamp>2017-06-19.23:37:41</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:41</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="75" parent="1" name="WGIS_PATROL_AREA_COORS">
+      <object-id>83931</object-id>
+      <comment>巡防区点集合</comment>
+      <created-timestamp>2017-06-19.23:37:42</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:42</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="76" parent="1" name="WGIS_POI">
+      <object-id>83934</object-id>
+      <created-timestamp>2017-06-19.23:37:42</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:42</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <view id="77" parent="1" name="V_CJJLB">
+      <object-id>80489</object-id>
+      <created-timestamp>2017-05-19.16:41:01</created-timestamp>
+      <modified-timestamp>2017-05-24.19:57:40</modified-timestamp>
+      <modifiable>1</modifiable>
+    </view>
+    <view id="78" parent="1" name="V_FKJLB">
+      <object-id>80490</object-id>
+      <created-timestamp>2017-05-19.17:05:50</created-timestamp>
+      <modified-timestamp>2017-05-24.19:57:33</modified-timestamp>
+      <modifiable>1</modifiable>
+    </view>
+    <view id="79" parent="1" name="V_GPS_SS">
+      <object-id>83945</object-id>
+      <created-timestamp>2017-06-21.16:14:33</created-timestamp>
+      <modified-timestamp>2017-06-21.16:14:33</modified-timestamp>
+      <modifiable>1</modifiable>
+    </view>
+    <view id="80" parent="1" name="V_JCJB">
+      <object-id>80636</object-id>
+      <created-timestamp>2017-05-23.17:08:06</created-timestamp>
+      <modified-timestamp>2017-05-24.19:57:24</modified-timestamp>
+      <modifiable>1</modifiable>
+    </view>
+    <view id="81" parent="1" name="V_JJJLB">
+      <object-id>80488</object-id>
+      <created-timestamp>2017-05-19.16:39:37</created-timestamp>
+      <modified-timestamp>2017-06-02.13:47:16</modified-timestamp>
+      <modifiable>1</modifiable>
+    </view>
+    <view id="82" parent="1" name="V_RESOURCES">
+      <object-id>78134</object-id>
+      <created-timestamp>2017-05-11.16:28:03</created-timestamp>
+      <modified-timestamp>2017-06-20.00:43:04</modified-timestamp>
+      <modifiable>1</modifiable>
+    </view>
+    <view id="83" parent="1" name="V_ZBYXXB">
+      <object-id>80530</object-id>
+      <created-timestamp>2017-05-20.21:55:58</created-timestamp>
+      <modified-timestamp>2017-05-24.19:57:03</modified-timestamp>
+      <modifiable>1</modifiable>
+    </view>
+    <view id="84" parent="1" name="ZDXXB">
+      <object-id>80653</object-id>
+      <created-timestamp>2017-05-24.19:56:37</created-timestamp>
+      <modified-timestamp>2017-05-24.20:01:51</modified-timestamp>
+      <modifiable>1</modifiable>
+    </view>
+    <routine id="85" parent="1" name="GET_UUID">
+      <object-id>78375</object-id>
+      <created-timestamp>2017-05-16.22:28:26</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:42</modified-timestamp>
+      <routine-kind>FUNCTION</routine-kind>
+    </routine>
+    <column id="86" parent="52" name="ID">
+      <comment>无业务主键UUID</comment>
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(36)|0</data-type>
+    </column>
+    <column id="87" parent="52" name="JJBH">
+      <comment>接警单编号</comment>
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(19)|0</data-type>
+    </column>
+    <column id="88" parent="52" name="USERNAME">
+      <comment>关注人的用户名</comment>
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <index id="89" parent="52" name="PK_ALARM_FAVORITE">
+      <object-id>83872</object-id>
+      <created-timestamp>2017-06-19.23:37:39</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:39</modified-timestamp>
+      <columns>ID</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <index id="90" parent="52" name="IDX_ALARM_FAVORITE_JJBH">
+      <object-id>83870</object-id>
+      <created-timestamp>2017-06-19.23:37:39</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:39</modified-timestamp>
+      <columns>JJBH</columns>
+      <desc-columns></desc-columns>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <index id="91" parent="52" name="IDX_ALARM_FAVORITE_USERNAME">
+      <object-id>83871</object-id>
+      <created-timestamp>2017-06-19.23:37:39</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:39</modified-timestamp>
+      <columns>USERNAME</columns>
+      <desc-columns></desc-columns>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <key id="92" parent="52" name="PK_ALARM_FAVORITE">
+      <modified-timestamp>2017-06-19.23:37:40</modified-timestamp>
+      <columns>ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>PK_ALARM_FAVORITE</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="93" parent="53" name="JJBH">
+      <comment>接警编号</comment>
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(19)|0</data-type>
+    </column>
+    <column id="94" parent="53" name="BJXSMC">
+      <comment>报警形式</comment>
+      <data-type>VARCHAR2(40)|0</data-type>
+    </column>
+    <column id="95" parent="53" name="BJDH">
+      <comment>报警电话</comment>
+      <data-type>VARCHAR2(15)|0</data-type>
+    </column>
+    <column id="96" parent="53" name="BJHM">
+      <comment>拨叫号码</comment>
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="97" parent="53" name="DYYHDZ">
+      <comment>电话用户地址</comment>
+      <data-type>VARCHAR2(80)|0</data-type>
+    </column>
+    <column id="98" parent="53" name="DYYHHZ">
+      <comment>户主</comment>
+      <data-type>VARCHAR2(80)|0</data-type>
+    </column>
+    <column id="99" parent="53" name="ZDXXDM">
+      <comment>业务类型代码</comment>
+      <data-type>VARCHAR2(2)|0</data-type>
+    </column>
+    <column id="100" parent="53" name="JJRXM">
+      <comment>接警员姓名</comment>
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="101" parent="53" name="BJSJ">
+      <comment>报警时间</comment>
+      <data-type>DATE|0</data-type>
+    </column>
+    <column id="102" parent="53" name="BJRXM">
+      <comment>报警人</comment>
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="103" parent="53" name="BJRXB">
+      <comment>性别</comment>
+      <data-type>VARCHAR2(2)|0</data-type>
+    </column>
+    <column id="104" parent="53" name="BJRLXDH">
+      <comment>联系电话</comment>
+      <data-type>VARCHAR2(15)|0</data-type>
+    </column>
+    <column id="105" parent="53" name="FADZ">
+      <comment>案发地址</comment>
+      <data-type>VARCHAR2(80)|0</data-type>
+    </column>
+    <column id="106" parent="53" name="GXDWMC">
+      <comment>管辖单位</comment>
+      <data-type>VARCHAR2(40)|0</data-type>
+    </column>
+    <column id="107" parent="53" name="XQMC">
+      <comment>辖区名称</comment>
+      <data-type>VARCHAR2(40)|0</data-type>
+    </column>
+    <column id="108" parent="53" name="JJLBMC">
+      <comment>案件类别</comment>
+      <data-type>VARCHAR2(40)|0</data-type>
+    </column>
+    <column id="109" parent="53" name="JJLXMC">
+      <comment>案件类型</comment>
+      <data-type>VARCHAR2(40)|0</data-type>
+    </column>
+    <column id="110" parent="53" name="JJXLMC">
+      <comment>案件细类</comment>
+      <data-type>VARCHAR2(40)|0</data-type>
+    </column>
+    <column id="111" parent="53" name="JJXXMC">
+      <comment>案件小类</comment>
+      <data-type>VARCHAR2(40)|0</data-type>
+    </column>
+    <column id="112" parent="53" name="BJNR">
+      <comment>报警内容</comment>
+      <data-type>VARCHAR2(4000)|0</data-type>
+    </column>
+    <column id="113" parent="53" name="CLQK">
+      <comment>处理情况</comment>
+      <data-type>VARCHAR2(2000)|0</data-type>
+    </column>
+    <column id="114" parent="53" name="CPH">
+      <comment>车牌号</comment>
+      <data-type>VARCHAR2(80)|0</data-type>
+    </column>
+    <column id="115" parent="53" name="XDWZBX">
+      <comment>lat</comment>
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="116" parent="53" name="YDWZBY">
+      <comment>lng</comment>
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="117" parent="53" name="TIMESCOPE">
+      <comment>(现在-报警时间)*小时</comment>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="118" parent="53" name="CJDWDM">
+      <comment>处警单位代码</comment>
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(6)|0</data-type>
+    </column>
+    <column id="119" parent="53" name="CJDWMC">
+      <comment>处警单位名称</comment>
+      <data-type>VARCHAR2(40)|0</data-type>
+    </column>
+    <column id="120" parent="53" name="SLDWMC">
+      <comment>受理单位代码</comment>
+      <data-type>VARCHAR2(40)|0</data-type>
+    </column>
+    <column id="121" parent="53" name="CJZT">
+      <comment>处警状态</comment>
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="122" parent="53" name="PFSJ">
+      <comment>派发时间</comment>
+      <data-type>DATE|0</data-type>
+    </column>
+    <column id="123" parent="53" name="SLRXM">
+      <comment>受理人姓名</comment>
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="124" parent="53" name="SLSJ">
+      <comment>受理时间</comment>
+      <data-type>DATE|0</data-type>
+    </column>
+    <column id="125" parent="53" name="CJRXM">
+      <comment>处警人姓名</comment>
+      <data-type>VARCHAR2(40)|0</data-type>
+    </column>
+    <column id="126" parent="53" name="GXQ">
+      <comment>管辖权</comment>
+      <data-type>VARCHAR2(1)|0</data-type>
+    </column>
+    <index id="127" parent="53" name="PK_ALARM_INFO">
+      <object-id>83874</object-id>
+      <created-timestamp>2017-06-19.23:37:40</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:40</modified-timestamp>
+      <columns>JJBH</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <key id="128" parent="53" name="PK_ALARM_INFO">
+      <modified-timestamp>2017-06-19.23:37:40</modified-timestamp>
+      <columns>JJBH</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>PK_ALARM_INFO</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="129" parent="54" name="ID">
+      <comment>UUID无业务主键</comment>
+      <data-type>VARCHAR2(36)|0</data-type>
+    </column>
+    <column id="130" parent="54" name="EMTID">
+      <comment>设备ID</comment>
+      <data-type>VARCHAR2(36)|0</data-type>
+    </column>
+    <column id="131" parent="54" name="STATUS">
+      <comment>设备状态</comment>
+      <data-type>NUMBER(4)|0</data-type>
+    </column>
+    <column id="132" parent="54" name="LTIME">
+      <comment>最后发送时间</comment>
+      <data-type>DATE|0</data-type>
+    </column>
+    <column id="133" parent="54" name="MILEAGE">
+      <comment>行驶里程</comment>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="134" parent="54" name="SPEED">
+      <comment>速度</comment>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="135" parent="54" name="DIRECTION">
+      <comment>0北90东180南270西，无条件可不写</comment>
+      <data-type>NUMBER(3)|0</data-type>
+    </column>
+    <column id="136" parent="54" name="XOFFSET">
+      <comment>纬度</comment>
+      <data-type>NUMBER(13,10)|0</data-type>
+    </column>
+    <column id="137" parent="54" name="YOFFSET">
+      <comment>经度</comment>
+      <data-type>NUMBER(13,10)|0</data-type>
+    </column>
+    <column id="138" parent="54" name="IVCOUNT">
+      <comment>可见星数量，无条件可不写</comment>
+      <data-type>NUMBER(3)|0</data-type>
+    </column>
+    <column id="139" parent="54" name="JJDBH">
+      <comment>当前接警单编号，如果带着任务出车，则写入该字段</comment>
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <index id="140" parent="54" name="IDX_B_TRAC_EMT">
+      <object-id>83877</object-id>
+      <created-timestamp>2017-06-19.23:37:40</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:40</modified-timestamp>
+      <columns>EMTID</columns>
+      <desc-columns></desc-columns>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <index id="141" parent="54" name="IDX_B_TRAC_STATUS">
+      <object-id>83878</object-id>
+      <created-timestamp>2017-06-19.23:37:40</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:40</modified-timestamp>
+      <columns>STATUS</columns>
+      <desc-columns></desc-columns>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <index id="142" parent="54" name="IDX_B_TRAC_LTIME">
+      <object-id>83876</object-id>
+      <created-timestamp>2017-06-19.23:37:40</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:40</modified-timestamp>
+      <columns>LTIME</columns>
+      <desc-columns></desc-columns>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <index id="143" parent="54" name="IDX_B_TRAC_JJDBH">
+      <object-id>83879</object-id>
+      <created-timestamp>2017-06-19.23:37:40</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:40</modified-timestamp>
+      <columns>JJDBH</columns>
+      <desc-columns></desc-columns>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <column id="144" parent="55" name="ID">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(36)|0</data-type>
+    </column>
+    <column id="145" parent="55" name="EMTID">
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="146" parent="55" name="STATUS">
+      <data-type>NUMBER(4)|0</data-type>
+    </column>
+    <column id="147" parent="55" name="LTIME">
+      <data-type>DATE|0</data-type>
+    </column>
+    <column id="148" parent="55" name="MILEAGE">
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="149" parent="55" name="SPEED">
+      <data-type>NUMBER(7,4)|0</data-type>
+    </column>
+    <column id="150" parent="55" name="DIRECTION">
+      <data-type>NUMBER(3)|0</data-type>
+    </column>
+    <column id="151" parent="55" name="XOFFSET">
+      <data-type>NUMBER(13,10)|0</data-type>
+    </column>
+    <column id="152" parent="55" name="YOFFSET">
+      <data-type>NUMBER(13,10)|0</data-type>
+    </column>
+    <column id="153" parent="55" name="IVCOUNT">
+      <data-type>NUMBER(3)|0</data-type>
+    </column>
+    <column id="154" parent="55" name="JJDBH">
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <index id="155" parent="55" name="PK_B_TRAC_HIS">
+      <object-id>83881</object-id>
+      <created-timestamp>2017-06-19.23:37:40</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:40</modified-timestamp>
+      <columns>ID</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <index id="156" parent="55" name="IDX_B_TRAC_HIS_EMT">
+      <object-id>83882</object-id>
+      <created-timestamp>2017-06-19.23:37:40</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:40</modified-timestamp>
+      <columns>EMTID</columns>
+      <desc-columns></desc-columns>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <index id="157" parent="55" name="IDX_B_TRAC_HIS_STATUS">
+      <object-id>83885</object-id>
+      <created-timestamp>2017-06-19.23:37:40</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:40</modified-timestamp>
+      <columns>STATUS</columns>
+      <desc-columns></desc-columns>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <index id="158" parent="55" name="IDX_B_TRAC_HIS_LTIME">
+      <object-id>83884</object-id>
+      <created-timestamp>2017-06-19.23:37:40</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:40</modified-timestamp>
+      <columns>LTIME</columns>
+      <desc-columns></desc-columns>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <index id="159" parent="55" name="IDX_B_TRAC_HIS_JJDBH">
+      <object-id>83883</object-id>
+      <created-timestamp>2017-06-19.23:37:40</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:40</modified-timestamp>
+      <columns>JJDBH</columns>
+      <desc-columns></desc-columns>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <key id="160" parent="55" name="PK_B_TRAC_HIS">
+      <modified-timestamp>2017-06-19.23:37:40</modified-timestamp>
+      <columns>ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>PK_B_TRAC_HIS</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="161" parent="56" name="UUID">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(255)|0</data-type>
+    </column>
+    <column id="162" parent="56" name="CREATE_TIME">
+      <data-type>TIMESTAMP(6)|0</data-type>
+    </column>
+    <column id="163" parent="56" name="DIRCTION">
+      <data-type>VARCHAR2(255)|0</data-type>
+    </column>
+    <column id="164" parent="56" name="GPS_NO">
+      <data-type>VARCHAR2(255)|0</data-type>
+    </column>
+    <column id="165" parent="56" name="LATITUDE">
+      <data-type>FLOAT(126)|0</data-type>
+    </column>
+    <column id="166" parent="56" name="LONGITUDE">
+      <data-type>FLOAT(126)|0</data-type>
+    </column>
+    <column id="167" parent="56" name="ONLINE_STATUS">
+      <data-type>VARCHAR2(255)|0</data-type>
+    </column>
+    <column id="168" parent="56" name="REPORT_TIME">
+      <data-type>TIMESTAMP(6)|0</data-type>
+    </column>
+    <column id="169" parent="56" name="SPEED">
+      <data-type>VARCHAR2(255)|0</data-type>
+    </column>
+    <column id="170" parent="57" name="ID">
+      <comment>无业务主键</comment>
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="171" parent="57" name="ACODE">
+      <comment>预警代码</comment>
+      <data-type>NUMBER(4)|0</data-type>
+    </column>
+    <column id="172" parent="57" name="COLOR">
+      <comment>html颜色代码</comment>
+      <data-type>VARCHAR2(10)|0</data-type>
+    </column>
+    <index id="173" parent="57" name="PK_STYLE_ALM_COLOR">
+      <object-id>83887</object-id>
+      <created-timestamp>2017-06-19.23:37:40</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:40</modified-timestamp>
+      <columns>ID</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <key id="174" parent="57" name="PK_STYLE_ALM_COLOR">
+      <modified-timestamp>2017-06-19.23:37:40</modified-timestamp>
+      <columns>ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>PK_STYLE_ALM_COLOR</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="175" parent="58" name="ID">
+      <comment>主键</comment>
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="176" parent="58" name="PSIZE">
+      <comment>大小</comment>
+      <data-type>VARCHAR2(30)|0</data-type>
+    </column>
+    <column id="177" parent="58" name="SHAPE">
+      <comment>图形形状</comment>
+      <data-type>VARCHAR2(30)|0</data-type>
+    </column>
+    <column id="178" parent="58" name="COLOR">
+      <comment>图形颜色</comment>
+      <data-type>VARCHAR2(30)|0</data-type>
+    </column>
+    <column id="179" parent="58" name="PTYPE">
+      <comment>资源类型</comment>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="180" parent="58" name="PCODE">
+      <comment>资源值</comment>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <index id="181" parent="58" name="STYLE_OPTIONS_ID">
+      <object-id>83889</object-id>
+      <created-timestamp>2017-06-19.23:37:40</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:40</modified-timestamp>
+      <columns>ID</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <key id="182" parent="58" name="STYLE_OPTIONS_ID">
+      <modified-timestamp>2017-06-19.23:37:40</modified-timestamp>
+      <columns>ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>STYLE_OPTIONS_ID</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="183" parent="59" name="ID">
+      <comment>无业务主键</comment>
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="184" parent="59" name="PATH">
+      <comment>图片路径</comment>
+      <data-type>VARCHAR2(200)|0</data-type>
+    </column>
+    <column id="185" parent="59" name="FILENAME">
+      <comment>文件名</comment>
+      <data-type>VARCHAR2(50)|0</data-type>
+    </column>
+    <column id="186" parent="59" name="EXTNAME">
+      <comment>文件后缀</comment>
+      <data-type>VARCHAR2(10)|0</data-type>
+    </column>
+    <index id="187" parent="59" name="PK_STYLE_PICS">
+      <object-id>83891</object-id>
+      <created-timestamp>2017-06-19.23:37:40</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:40</modified-timestamp>
+      <columns>ID</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <key id="188" parent="59" name="PK_STYLE_PICS">
+      <modified-timestamp>2017-06-19.23:37:40</modified-timestamp>
+      <columns>ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>PK_STYLE_PICS</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="189" parent="60" name="ID">
+      <comment>ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(8)|0</data-type>
+    </column>
+    <column id="190" parent="60" name="NAME">
+      <comment>菜单名称</comment>
+      <data-type>VARCHAR2(32)|0</data-type>
+    </column>
+    <column id="191" parent="60" name="PARENTID">
+      <comment>父ID</comment>
+      <data-type>NUMBER(8)|0</data-type>
+    </column>
+    <column id="192" parent="60" name="LEVELNUM">
+      <comment>层级</comment>
+      <data-type>NUMBER(4)|0</data-type>
+    </column>
+    <column id="193" parent="60" name="IS_EXPAND">
+      <comment>是否展开。0是，1否</comment>
+      <data-type>NUMBER(1)|0</data-type>
+    </column>
+    <column id="194" parent="60" name="URL">
+      <comment>访问URL</comment>
+      <data-type>VARCHAR2(100)|0</data-type>
+    </column>
+    <column id="195" parent="60" name="IMG">
+      <comment>图标</comment>
+      <data-type>VARCHAR2(100)|0</data-type>
+    </column>
+    <column id="196" parent="60" name="TITLE">
+      <comment>所对应的对象名</comment>
+      <data-type>VARCHAR2(64)|0</data-type>
+    </column>
+    <column id="197" parent="60" name="CONTENT">
+      <comment>说明</comment>
+      <data-type>VARCHAR2(32)|0</data-type>
+    </column>
+    <column id="198" parent="60" name="PART_ID">
+      <comment>系统模块ID</comment>
+      <data-type>NUMBER(8)|0</data-type>
+    </column>
+    <column id="199" parent="60" name="SORT_ID">
+      <comment>排序ID</comment>
+      <data-type>NUMBER(4)|0</data-type>
+    </column>
+    <column id="200" parent="60" name="FLAG">
+      <comment>注销标志。1注销</comment>
+      <data-type>NUMBER(1)|0</data-type>
+      <default-expression>0</default-expression>
+    </column>
+    <column id="201" parent="60" name="URL_OPENTYPE">
+      <comment>URL打开方式。1当前页面打开，2 新页面打开</comment>
+      <data-type>NUMBER(4)|0</data-type>
+    </column>
+    <index id="202" parent="60" name="PK_SYS_CATEGORY">
+      <object-id>83893</object-id>
+      <created-timestamp>2017-06-19.23:37:40</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:40</modified-timestamp>
+      <columns>ID</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <key id="203" parent="60" name="PK_SYS_CATEGORY">
+      <modified-timestamp>2017-06-19.23:37:40</modified-timestamp>
+      <columns>ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>PK_SYS_CATEGORY</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="204" parent="61" name="ID">
+      <comment>模块权限主键</comment>
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(50)|0</data-type>
+    </column>
+    <column id="205" parent="61" name="OBJECTTYPE">
+      <comment>对象分类:1-部门2-角色3-岗位4-群组5-用户</comment>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="206" parent="61" name="OBJECTID">
+      <comment>对象主键</comment>
+      <data-type>VARCHAR2(8)|0</data-type>
+    </column>
+    <column id="207" parent="61" name="MODULEID">
+      <comment>模块主键</comment>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="208" parent="62" name="ID">
+      <comment>ID</comment>
+      <data-type>NUMBER(8)|0</data-type>
+    </column>
+    <column id="209" parent="62" name="CODE">
+      <comment>编码代码</comment>
+      <data-type>NUMBER(4)|0</data-type>
+    </column>
+    <column id="210" parent="62" name="NAME">
+      <comment>编码名称</comment>
+      <data-type>VARCHAR2(64)|0</data-type>
+    </column>
+    <column id="211" parent="62" name="TYPEID">
+      <comment>编码类型ID</comment>
+      <data-type>NUMBER(4)|0</data-type>
+    </column>
+    <column id="212" parent="62" name="SORT_ID">
+      <comment>排序ID</comment>
+      <data-type>NUMBER(4)|0</data-type>
+    </column>
+    <column id="213" parent="62" name="FLAG">
+      <comment>是否禁用。默认为0 否，禁用置1</comment>
+      <data-type>NUMBER(1)|0</data-type>
+      <default-expression>0</default-expression>
+    </column>
+    <column id="214" parent="62" name="NOTE">
+      <comment>备注</comment>
+      <data-type>VARCHAR2(256)|0</data-type>
+    </column>
+    <column id="215" parent="63" name="TYPEID">
+      <comment>编码类型ID</comment>
+      <data-type>NUMBER(4)|0</data-type>
+    </column>
+    <column id="216" parent="63" name="NAME">
+      <comment>编码类型名称</comment>
+      <data-type>VARCHAR2(64)|0</data-type>
+    </column>
+    <column id="217" parent="63" name="PARENT_TYPEID">
+      <comment>上级编码类型</comment>
+      <data-type>NUMBER(4)|0</data-type>
+    </column>
+    <column id="218" parent="63" name="FLAG">
+      <comment>是否禁用。默认为0 否，禁用置1</comment>
+      <data-type>NUMBER(1)|0</data-type>
+      <default-expression>0</default-expression>
+    </column>
+    <column id="219" parent="63" name="NOTE">
+      <comment>备注</comment>
+      <data-type>VARCHAR2(256)|0</data-type>
+    </column>
+    <column id="220" parent="64" name="ID">
+      <comment>ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(16)|0</data-type>
+    </column>
+    <column id="221" parent="64" name="TYPE">
+      <comment>类型</comment>
+      <data-type>VARCHAR2(100)|0</data-type>
+    </column>
+    <column id="222" parent="64" name="MESSAGE">
+      <comment>目标</comment>
+      <data-type>VARCHAR2(2000)|0</data-type>
+    </column>
+    <column id="223" parent="64" name="LONGMSG">
+      <comment>描述</comment>
+      <data-type>CLOB|0</data-type>
+    </column>
+    <column id="224" parent="64" name="NOTE">
+      <comment>备注</comment>
+      <data-type>VARCHAR2(2000)|0</data-type>
+    </column>
+    <column id="225" parent="64" name="LOGDATE">
+      <comment>时间</comment>
+      <data-type>DATE|0</data-type>
+    </column>
+    <column id="226" parent="64" name="XZBM">
+      <comment>行政编码</comment>
+      <data-type>NUMBER(8)|0</data-type>
+      <default-expression>330201</default-expression>
+    </column>
+    <column id="227" parent="64" name="PART_ID">
+      <comment>PART_ID</comment>
+      <data-type>NUMBER(4)|0</data-type>
+    </column>
+    <index id="228" parent="64" name="PK_SYS_LOGS">
+      <object-id>83900</object-id>
+      <created-timestamp>2017-06-19.23:37:40</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:40</modified-timestamp>
+      <columns>ID</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <key id="229" parent="64" name="PK_SYS_LOGS">
+      <modified-timestamp>2017-06-19.23:37:41</modified-timestamp>
+      <columns>ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>PK_SYS_LOGS</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="230" parent="65" name="ID">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(36)|0</data-type>
+    </column>
+    <column id="231" parent="65" name="NBDWDM">
+      <comment>内部单位代码</comment>
+      <data-type>VARCHAR2(12)|0</data-type>
+    </column>
+    <column id="232" parent="65" name="NBDWMC">
+      <comment>内部单位名称</comment>
+      <data-type>VARCHAR2(100)|0</data-type>
+    </column>
+    <column id="233" parent="65" name="SJDWDM">
+      <comment>上级内部代码</comment>
+      <data-type>VARCHAR2(12)|0</data-type>
+    </column>
+    <column id="234" parent="65" name="DHHM">
+      <comment>电话号码</comment>
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="235" parent="65" name="YOFFSET">
+      <comment>经度</comment>
+      <data-type>NUMBER(12,6)|0</data-type>
+    </column>
+    <column id="236" parent="65" name="XOFFSET">
+      <comment>纬度</comment>
+      <data-type>NUMBER(12,6)|0</data-type>
+    </column>
+    <column id="237" parent="65" name="LAYERTYPE">
+      <comment>图层类型</comment>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="238" parent="65" name="PXBH">
+      <comment>排序编号</comment>
+      <data-type>VARCHAR2(6)|0</data-type>
+    </column>
+    <column id="239" parent="65" name="FLAG">
+      <comment>是否禁用</comment>
+      <data-type>NUMBER(*)|0</data-type>
+      <default-expression>0
+
+</default-expression>
+    </column>
+    <column id="240" parent="65" name="SPELL">
+      <comment>拼音简写</comment>
+      <data-type>VARCHAR2(32)|0</data-type>
+    </column>
+    <index id="241" parent="65" name="PK_SYS_ORG_INFO">
+      <object-id>83902</object-id>
+      <created-timestamp>2017-06-19.23:37:41</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:41</modified-timestamp>
+      <columns>ID</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <index id="242" parent="65" name="IDX_SYS_ORG_INFO">
+      <object-id>83903</object-id>
+      <created-timestamp>2017-06-19.23:37:41</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:41</modified-timestamp>
+      <columns>NBDWDM</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <index id="243" parent="65" name="IDX_SYS_ORG_INFO_SPELL">
+      <object-id>83904</object-id>
+      <created-timestamp>2017-06-19.23:37:41</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:41</modified-timestamp>
+      <columns>SPELL</columns>
+      <desc-columns></desc-columns>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <key id="244" parent="65" name="PK_SYS_ORG_INFO">
+      <modified-timestamp>2017-06-19.23:37:41</modified-timestamp>
+      <columns>ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>PK_SYS_ORG_INFO</underlying-index>
+      <primary>1</primary>
+    </key>
+    <key id="245" parent="65" name="IDX_SYS_ORG_INFO">
+      <modified-timestamp>2017-06-19.23:37:41</modified-timestamp>
+      <columns>NBDWDM</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>IDX_SYS_ORG_INFO</underlying-index>
+    </key>
+    <column id="246" parent="66" name="ID">
+      <comment>ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(4)|0</data-type>
+    </column>
+    <column id="247" parent="66" name="NAME">
+      <comment>名称</comment>
+      <data-type>VARCHAR2(256)|0</data-type>
+    </column>
+    <column id="248" parent="66" name="NOTE">
+      <comment>备注</comment>
+      <data-type>VARCHAR2(256)|0</data-type>
+    </column>
+    <column id="249" parent="66" name="FLAG">
+      <comment>是否可用。0 否 1 是</comment>
+      <data-type>NUMBER(1)|0</data-type>
+    </column>
+    <column id="250" parent="66" name="PARENT_ID">
+      <comment>所属系统</comment>
+      <data-type>NUMBER(4)|0</data-type>
+    </column>
+    <index id="251" parent="66" name="PK_SYS_PART_INFO">
+      <object-id>83906</object-id>
+      <created-timestamp>2017-06-19.23:37:41</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:41</modified-timestamp>
+      <columns>ID</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <key id="252" parent="66" name="PK_SYS_PART_INFO">
+      <modified-timestamp>2017-06-19.23:37:41</modified-timestamp>
+      <columns>ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>PK_SYS_PART_INFO</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="253" parent="67" name="ID">
+      <comment>ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(8)|0</data-type>
+    </column>
+    <column id="254" parent="67" name="NAME">
+      <comment>角色名称</comment>
+      <data-type>VARCHAR2(256)|0</data-type>
+    </column>
+    <column id="255" parent="67" name="PART_ID">
+      <comment>系统模块ID</comment>
+      <data-type>NUMBER(4)|0</data-type>
+    </column>
+    <column id="256" parent="67" name="CATEGORYLIST">
+      <comment>菜单ID数组</comment>
+      <data-type>VARCHAR2(1000)|0</data-type>
+    </column>
+    <column id="257" parent="67" name="REMARK">
+      <comment>角色描述</comment>
+      <data-type>VARCHAR2(256)|0</data-type>
+    </column>
+    <column id="258" parent="67" name="CREATEUSERID">
+      <comment>创建人</comment>
+      <data-type>VARCHAR2(8)|0</data-type>
+    </column>
+    <column id="259" parent="67" name="CREATEDATE">
+      <comment>创建时间</comment>
+      <data-type>DATE|0</data-type>
+    </column>
+    <column id="260" parent="67" name="UPDATEUSERID">
+      <comment>最后修改人</comment>
+      <data-type>VARCHAR2(8)|0</data-type>
+    </column>
+    <column id="261" parent="67" name="UPDATEDATE">
+      <comment>最后修改时间</comment>
+      <data-type>DATE|0</data-type>
+    </column>
+    <column id="262" parent="67" name="FLAG">
+      <comment>是否注销。默认0 未注销,1 注销</comment>
+      <data-type>NUMBER(1)|0</data-type>
+      <default-expression>0
+</default-expression>
+    </column>
+    <index id="263" parent="67" name="PK_SYS_ROLES">
+      <object-id>83908</object-id>
+      <created-timestamp>2017-06-19.23:37:41</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:41</modified-timestamp>
+      <columns>ID</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <key id="264" parent="67" name="PK_SYS_ROLES">
+      <modified-timestamp>2017-06-19.23:37:41</modified-timestamp>
+      <columns>ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>PK_SYS_ROLES</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="265" parent="68" name="ID">
+      <comment>警车ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(36)|0</data-type>
+    </column>
+    <column id="266" parent="68" name="ORG_ID">
+      <comment>所属分站。存储单位的ORG_ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(16)|0</data-type>
+    </column>
+    <column id="267" parent="68" name="PLATE_NUMBER">
+      <comment>车牌号</comment>
+      <data-type>VARCHAR2(16)|0</data-type>
+    </column>
+    <column id="268" parent="68" name="NAME">
+      <comment>名称</comment>
+      <data-type>VARCHAR2(32)|0</data-type>
+    </column>
+    <column id="269" parent="68" name="CAR_PHONE">
+      <comment>随车电话</comment>
+      <data-type>VARCHAR2(16)|0</data-type>
+    </column>
+    <column id="270" parent="68" name="FLAG">
+      <comment>禁用标志。默认0 有效，1 禁用</comment>
+      <data-type>NUMBER(1)|0</data-type>
+      <default-expression>0
+</default-expression>
+    </column>
+    <column id="271" parent="68" name="SPELL">
+      <comment>拼音简写</comment>
+      <data-type>VARCHAR2(32)|0</data-type>
+    </column>
+    <index id="272" parent="68" name="PK_WGIS_CAR_INFO">
+      <object-id>83910</object-id>
+      <created-timestamp>2017-06-19.23:37:41</created-timestamp>
+      <modified-timestamp>2017-06-22.10:52:55</modified-timestamp>
+      <columns>ID</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <index id="273" parent="68" name="IDX_WGIS_CAR_INFO_ORGID">
+      <object-id>83911</object-id>
+      <created-timestamp>2017-06-19.23:37:41</created-timestamp>
+      <modified-timestamp>2017-06-22.10:52:55</modified-timestamp>
+      <columns>ORG_ID</columns>
+      <desc-columns></desc-columns>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <index id="274" parent="68" name="IDX_WGIS_CAR_INFO_NAME">
+      <object-id>83913</object-id>
+      <created-timestamp>2017-06-19.23:37:41</created-timestamp>
+      <modified-timestamp>2017-06-22.10:52:55</modified-timestamp>
+      <columns>NAME</columns>
+      <desc-columns></desc-columns>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <index id="275" parent="68" name="IDX_WGIS_CAR_INFO_CAR_PHONE">
+      <object-id>83914</object-id>
+      <created-timestamp>2017-06-19.23:37:41</created-timestamp>
+      <modified-timestamp>2017-06-22.10:52:55</modified-timestamp>
+      <columns>CAR_PHONE</columns>
+      <desc-columns></desc-columns>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <index id="276" parent="68" name="IDX_WGIS_CAR_INFO_SPELL">
+      <object-id>83912</object-id>
+      <created-timestamp>2017-06-19.23:37:41</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:41</modified-timestamp>
+      <columns>SPELL</columns>
+      <desc-columns></desc-columns>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <key id="277" parent="68" name="PK_WGIS_CAR_INFO">
+      <modified-timestamp>2017-06-19.23:37:41</modified-timestamp>
+      <columns>ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>PK_WGIS_CAR_INFO</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="278" parent="69" name="ID">
+      <comment>ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(36)|0</data-type>
+    </column>
+    <column id="279" parent="69" name="NAME">
+      <comment>名称</comment>
+      <data-type>VARCHAR2(64)|0</data-type>
+    </column>
+    <column id="280" parent="69" name="EMTTYPE">
+      <comment>设备类型。存储设备类型编码</comment>
+      <data-type>NUMBER(4)|0</data-type>
+    </column>
+    <column id="281" parent="69" name="STATUS">
+      <comment>运行状态。存储运行状态编码</comment>
+      <data-type>NUMBER(4)|0</data-type>
+    </column>
+    <column id="282" parent="69" name="CALL_NUMBER">
+      <comment>通讯号码</comment>
+      <data-type>VARCHAR2(16)|0</data-type>
+    </column>
+    <column id="283" parent="69" name="ORG_ID">
+      <comment>所属单位ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(16)|0</data-type>
+    </column>
+    <column id="284" parent="69" name="CAR_ID">
+      <comment>随车ID，一般和GPS\PDA配套使用</comment>
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="285" parent="69" name="SERIAL">
+      <comment>设备编码</comment>
+      <data-type>VARCHAR2(30)|0</data-type>
+    </column>
+    <column id="286" parent="69" name="FLAG">
+      <comment>禁用标志。默认0 有效，1 禁用</comment>
+      <data-type>NUMBER(1)|0</data-type>
+      <default-expression>0
+</default-expression>
+    </column>
+    <column id="287" parent="69" name="SPELL">
+      <comment>拼音简写</comment>
+      <data-type>VARCHAR2(32)|0</data-type>
+    </column>
+    <index id="288" parent="69" name="PK_WGIS_EMT_INFO">
+      <object-id>83916</object-id>
+      <created-timestamp>2017-06-19.23:37:41</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:41</modified-timestamp>
+      <columns>ID</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <index id="289" parent="69" name="IDX_WGIS_EMT_INFO_NAME">
+      <object-id>83918</object-id>
+      <created-timestamp>2017-06-19.23:37:41</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:41</modified-timestamp>
+      <columns>NAME</columns>
+      <desc-columns></desc-columns>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <index id="290" parent="69" name="IDX_WGIS_EMT_INFO_SPELL">
+      <object-id>83917</object-id>
+      <created-timestamp>2017-06-19.23:37:41</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:41</modified-timestamp>
+      <columns>SPELL</columns>
+      <desc-columns></desc-columns>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <key id="291" parent="69" name="PK_WGIS_EMT_INFO">
+      <modified-timestamp>2017-06-19.23:37:41</modified-timestamp>
+      <columns>ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>PK_WGIS_EMT_INFO</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="292" parent="70" name="ID">
+      <comment>ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="293" parent="70" name="NAME">
+      <comment>文件名</comment>
+      <data-type>VARCHAR2(64)|0</data-type>
+    </column>
+    <column id="294" parent="70" name="TYPE">
+      <comment>文件类型</comment>
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="295" parent="70" name="ALIAS">
+      <comment>文件别名</comment>
+      <data-type>VARCHAR2(64)|0</data-type>
+    </column>
+    <column id="296" parent="70" name="FILESIZE">
+      <comment>文件大小。单位：KB</comment>
+      <data-type>NUMBER(10,3)|0</data-type>
+    </column>
+    <column id="297" parent="70" name="PATH">
+      <comment>存储路径</comment>
+      <data-type>VARCHAR2(100)|0</data-type>
+    </column>
+    <column id="298" parent="70" name="PART_ID">
+      <comment>提交模块</comment>
+      <data-type>NUMBER(4)|0</data-type>
+    </column>
+    <column id="299" parent="70" name="UPLOAD_TIME">
+      <comment>上传时间</comment>
+      <data-type>DATE|0</data-type>
+    </column>
+    <column id="300" parent="70" name="UPLOAD_USERID">
+      <comment>上传用户ID</comment>
+      <data-type>VARCHAR2(8)|0</data-type>
+    </column>
+    <column id="301" parent="70" name="RALATED_ID">
+      <comment>相关事件ID</comment>
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="302" parent="70" name="FLAG">
+      <comment>是否已删除。0是，1否</comment>
+      <data-type>NUMBER(1)|0</data-type>
+    </column>
+    <column id="303" parent="70" name="LAST_MODIFY_TIME">
+      <comment>最后更新时间</comment>
+      <data-type>DATE|0</data-type>
+    </column>
+    <column id="304" parent="70" name="XZBM">
+      <comment>行政编码</comment>
+      <data-type>NUMBER(8)|0</data-type>
+      <default-expression>330201</default-expression>
+    </column>
+    <column id="305" parent="70" name="RELATED_TYPE">
+      <comment>附件类别。存储附件类别编码</comment>
+      <data-type>NUMBER(4)|0</data-type>
+    </column>
+    <index id="306" parent="70" name="PK_WGIS_FILES">
+      <object-id>83920</object-id>
+      <created-timestamp>2017-06-19.23:37:41</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:41</modified-timestamp>
+      <columns>ID</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <key id="307" parent="70" name="PK_WGIS_FILES">
+      <modified-timestamp>2017-06-19.23:37:41</modified-timestamp>
+      <columns>ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>PK_WGIS_FILES</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="308" parent="71" name="IP">
+      <comment>ip</comment>
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(15)|0</data-type>
+    </column>
+    <column id="309" parent="71" name="TH">
+      <comment>台号</comment>
+      <data-type>VARCHAR2(3)|0</data-type>
+    </column>
+    <column id="310" parent="71" name="TLX">
+      <comment>台类型</comment>
+      <data-type>VARCHAR2(5)|0</data-type>
+    </column>
+    <index id="311" parent="71" name="PK_WGIS_IPLIST">
+      <object-id>83922</object-id>
+      <created-timestamp>2017-06-19.23:37:41</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:41</modified-timestamp>
+      <columns>IP</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <key id="312" parent="71" name="PK_WGIS_IPLIST">
+      <modified-timestamp>2017-06-19.23:37:41</modified-timestamp>
+      <columns>IP</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>PK_WGIS_IPLIST</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="313" parent="72" name="ID">
+      <comment>ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(36)|0</data-type>
+    </column>
+    <column id="314" parent="72" name="AREA_ID">
+      <comment>区域ID</comment>
+      <data-type>VARCHAR2(36)|0</data-type>
+    </column>
+    <column id="315" parent="72" name="NAME">
+      <comment>姓名</comment>
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="316" parent="72" name="PHONE">
+      <comment>联系电话</comment>
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="317" parent="72" name="POSITION">
+      <comment>具体位置</comment>
+      <data-type>VARCHAR2(100)|0</data-type>
+    </column>
+    <column id="318" parent="72" name="ADDRESS">
+      <comment>路段</comment>
+      <data-type>VARCHAR2(200)|0</data-type>
+    </column>
+    <column id="319" parent="72" name="SPELL">
+      <comment>名称拼音</comment>
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="320" parent="72" name="MASTER">
+      <comment>职务</comment>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="321" parent="72" name="PHONE1">
+      <comment>额外电话</comment>
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="322" parent="72" name="PHONE2">
+      <comment>额外电话</comment>
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="323" parent="72" name="PHONE3">
+      <comment>额外电话</comment>
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="324" parent="72" name="PHONE4">
+      <comment>额外电话</comment>
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="325" parent="72" name="NOTE">
+      <comment>备注</comment>
+      <data-type>VARCHAR2(200)|0</data-type>
+    </column>
+    <column id="326" parent="72" name="MEMTYPE">
+      <comment>人员类型</comment>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="327" parent="72" name="ORG_ID">
+      <comment>内部单位代码</comment>
+      <data-type>VARCHAR2(12)|0</data-type>
+    </column>
+    <column id="328" parent="72" name="SORT_NUM">
+      <comment>排序编号</comment>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <index id="329" parent="72" name="BIN$11qQ/6T8R+eIC5tJZdJNQA==$0">
+      <object-id>82741</object-id>
+      <created-timestamp>2017-06-13.21:54:57</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:14</modified-timestamp>
+      <columns>ID</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <column id="330" parent="73" name="ID">
+      <comment>ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(36)|0</data-type>
+    </column>
+    <column id="331" parent="73" name="SERIAL">
+      <comment>设备序列号</comment>
+      <data-type>VARCHAR2(30)|0</data-type>
+    </column>
+    <column id="332" parent="73" name="NAME">
+      <comment>监控名称</comment>
+      <data-type>VARCHAR2(100)|0</data-type>
+    </column>
+    <column id="333" parent="73" name="XCOOR">
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="334" parent="73" name="YCOOR">
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="335" parent="73" name="XOFFSET">
+      <comment>纬度偏移</comment>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="336" parent="73" name="YOFFSET">
+      <comment>经度偏移</comment>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="337" parent="73" name="LAYERTYPE">
+      <comment>图层类型</comment>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="338" parent="73" name="ADDRESS">
+      <comment>地址</comment>
+      <data-type>VARCHAR2(200)|0</data-type>
+    </column>
+    <column id="339" parent="73" name="IP">
+      <comment>IP</comment>
+      <data-type>VARCHAR2(15)|0</data-type>
+    </column>
+    <column id="340" parent="73" name="WORKSTAT">
+      <comment>工作状态</comment>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="341" parent="73" name="OPTIONS">
+      <comment>标点样式</comment>
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="342" parent="73" name="MAREA">
+      <comment>可视范围，单位m</comment>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="343" parent="73" name="SPELL">
+      <comment>拼音简写</comment>
+      <data-type>VARCHAR2(50)|0</data-type>
+    </column>
+    <index id="344" parent="73" name="PK_WGIS_MONITOR_ID">
+      <object-id>83924</object-id>
+      <created-timestamp>2017-06-19.23:37:41</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:41</modified-timestamp>
+      <columns>ID</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <index id="345" parent="73" name="IDX_WGIS_MONITOR_NAME">
+      <object-id>83925</object-id>
+      <created-timestamp>2017-06-19.23:37:41</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:41</modified-timestamp>
+      <columns>NAME</columns>
+      <desc-columns></desc-columns>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <index id="346" parent="73" name="IDX_WGIS_MONITOR_SPELL">
+      <object-id>83926</object-id>
+      <created-timestamp>2017-06-19.23:37:41</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:41</modified-timestamp>
+      <columns>SPELL</columns>
+      <desc-columns></desc-columns>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <key id="347" parent="73" name="PK_WGIS_MONITOR">
+      <modified-timestamp>2017-06-19.23:37:41</modified-timestamp>
+      <columns>ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>PK_WGIS_MONITOR_ID</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="348" parent="74" name="ID">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(36)|0</data-type>
+    </column>
+    <column id="349" parent="74" name="NAME">
+      <comment>名称</comment>
+      <data-type>VARCHAR2(100)|0</data-type>
+    </column>
+    <column id="350" parent="74" name="ORG_ID">
+      <comment>所属单位id</comment>
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="351" parent="74" name="LAYERTYPE">
+      <comment>图层类型</comment>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="352" parent="74" name="LAYERCOLOR">
+      <comment>颜色代码</comment>
+      <data-type>VARCHAR2(10)|0</data-type>
+      <default-expression>&apos;red&apos;
+</default-expression>
+    </column>
+    <column id="353" parent="74" name="BOUNDS_CENTER_YOFFSET">
+      <comment>边缘中心经度</comment>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="354" parent="74" name="BOUNDS_NORTHEAST_YOFFSET">
+      <comment>边缘东北经度</comment>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="355" parent="74" name="BOUNDS_SOUTHWEST_YOFFSET">
+      <comment>边缘西南经度</comment>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="356" parent="74" name="BOUNDS_CENTER_XOFFSET">
+      <comment>边缘中心纬度</comment>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="357" parent="74" name="BOUNDS_NORTHEAST_XOFFSET">
+      <comment>边缘东北纬度</comment>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="358" parent="74" name="BOUNDS_SOUTHWEST_XOFFSET">
+      <comment>边缘西南纬度</comment>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="359" parent="74" name="AREA">
+      <comment>面积</comment>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="360" parent="74" name="SPELL">
+      <comment>拼音简写</comment>
+      <data-type>VARCHAR2(32)|0</data-type>
+    </column>
+    <index id="361" parent="74" name="PK_WGIS_PATROL_AREA">
+      <object-id>83928</object-id>
+      <created-timestamp>2017-06-19.23:37:41</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:41</modified-timestamp>
+      <columns>ID</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <index id="362" parent="74" name="IDX_WGIS_PATROL_AREA_NAME">
+      <object-id>83929</object-id>
+      <created-timestamp>2017-06-19.23:37:41</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:41</modified-timestamp>
+      <columns>NAME</columns>
+      <desc-columns></desc-columns>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <index id="363" parent="74" name="IDX_WGIS_PATROL_AREA_SPELL">
+      <object-id>83930</object-id>
+      <created-timestamp>2017-06-19.23:37:41</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:41</modified-timestamp>
+      <columns>SPELL</columns>
+      <desc-columns></desc-columns>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <key id="364" parent="74" name="PK_WGIS_PATROL_AREA">
+      <modified-timestamp>2017-06-19.23:37:41</modified-timestamp>
+      <columns>ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>PK_WGIS_PATROL_AREA</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="365" parent="75" name="AREA_ID">
+      <comment>巡防区ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(36)|0</data-type>
+    </column>
+    <column id="366" parent="75" name="COOR_SORT">
+      <comment>点列顺序</comment>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="367" parent="75" name="XCOOR">
+      <comment>纬度WGS84</comment>
+      <data-type>NUMBER(12,6)|0</data-type>
+    </column>
+    <column id="368" parent="75" name="YCOOR">
+      <comment>经度WGS84</comment>
+      <data-type>NUMBER(12,6)|0</data-type>
+    </column>
+    <column id="369" parent="75" name="XOFFSET">
+      <comment>偏移纬度</comment>
+      <data-type>NUMBER(12,6)|0</data-type>
+    </column>
+    <column id="370" parent="75" name="YOFFSET">
+      <comment>偏移经度</comment>
+      <data-type>NUMBER(12,6)|0</data-type>
+    </column>
+    <column id="371" parent="75" name="ID">
+      <comment>无业务主键UUID</comment>
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(36)|0</data-type>
+    </column>
+    <index id="372" parent="75" name="PK_WGIS_PATROL_AREA_COORS">
+      <object-id>83933</object-id>
+      <created-timestamp>2017-06-19.23:37:42</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:42</modified-timestamp>
+      <columns>ID</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <index id="373" parent="75" name="IDX_WGIS_PATROL_AREA_COORS_ID">
+      <object-id>83932</object-id>
+      <created-timestamp>2017-06-19.23:37:42</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:42</modified-timestamp>
+      <columns>AREA_ID</columns>
+      <desc-columns></desc-columns>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <key id="374" parent="75" name="PK_WGIS_PATROL_AREA_COORS">
+      <modified-timestamp>2017-06-19.23:37:42</modified-timestamp>
+      <columns>ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>PK_WGIS_PATROL_AREA_COORS</underlying-index>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="375" parent="75" name="FK_WGIS_PATROL_AREA_COORS">
+      <modified-timestamp>2017-06-19.23:37:42</modified-timestamp>
+      <columns>AREA_ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <ref-key>~.WGIS_PATROL_AREA.PK_WGIS_PATROL_AREA</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="376" parent="76" name="ID">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(36)|0</data-type>
+    </column>
+    <column id="377" parent="76" name="NAME">
+      <data-type>VARCHAR2(100)|0</data-type>
+    </column>
+    <column id="378" parent="76" name="LAYERTYPE">
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="379" parent="76" name="XCOOR">
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="380" parent="76" name="YCOOR">
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="381" parent="76" name="XOFFSET">
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="382" parent="76" name="YOFFSET">
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="383" parent="76" name="ADDRESS">
+      <data-type>VARCHAR2(200)|0</data-type>
+    </column>
+    <column id="384" parent="76" name="PHONE">
+      <data-type>VARCHAR2(50)|0</data-type>
+    </column>
+    <column id="385" parent="76" name="SPELL">
+      <comment>拼音简写</comment>
+      <data-type>VARCHAR2(100)|0</data-type>
+    </column>
+    <index id="386" parent="76" name="PK_WGIS_POI">
+      <object-id>83935</object-id>
+      <created-timestamp>2017-06-19.23:37:42</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:42</modified-timestamp>
+      <columns>ID</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <index id="387" parent="76" name="IDX_WGIS_POI_NAME">
+      <object-id>83936</object-id>
+      <created-timestamp>2017-06-19.23:37:42</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:42</modified-timestamp>
+      <columns>NAME</columns>
+      <desc-columns></desc-columns>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <index id="388" parent="76" name="IDX_WGIS_POI_PHONE">
+      <object-id>83938</object-id>
+      <created-timestamp>2017-06-19.23:37:42</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:42</modified-timestamp>
+      <columns>PHONE</columns>
+      <desc-columns></desc-columns>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <index id="389" parent="76" name="IDX_WGIS_POI_SPELL">
+      <object-id>83937</object-id>
+      <created-timestamp>2017-06-19.23:37:42</created-timestamp>
+      <modified-timestamp>2017-06-19.23:37:42</modified-timestamp>
+      <columns>SPELL</columns>
+      <desc-columns></desc-columns>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <key id="390" parent="76" name="PK_WGIS_POI">
+      <modified-timestamp>2017-06-19.23:37:42</modified-timestamp>
+      <columns>ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>PK_WGIS_POI</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="391" parent="77" name="JJBH">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(19)|0</data-type>
+    </column>
+    <column id="392" parent="77" name="CJDWDM">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(6)|0</data-type>
+    </column>
+    <column id="393" parent="77" name="CJDWMC">
+      <data-type>VARCHAR2(40)|0</data-type>
+    </column>
+    <column id="394" parent="77" name="SLDWMC">
+      <data-type>VARCHAR2(40)|0</data-type>
+    </column>
+    <column id="395" parent="77" name="CJZT">
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="396" parent="77" name="PFSJ">
+      <data-type>DATE|0</data-type>
+    </column>
+    <column id="397" parent="77" name="SLRXM">
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="398" parent="77" name="SLSJ">
+      <data-type>DATE|0</data-type>
+    </column>
+    <column id="399" parent="77" name="CJRXM">
+      <data-type>VARCHAR2(40)|0</data-type>
+    </column>
+    <column id="400" parent="77" name="GXQ">
+      <data-type>VARCHAR2(1)|0</data-type>
+    </column>
+    <column id="401" parent="78" name="JJBH">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(19)|0</data-type>
+    </column>
+    <column id="402" parent="78" name="FKZT">
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="403" parent="78" name="DCSJ">
+      <data-type>DATE|0</data-type>
+    </column>
+    <column id="404" parent="78" name="FKSJ">
+      <data-type>DATE|0</data-type>
+    </column>
+    <column id="405" parent="78" name="FKLBMC">
+      <data-type>VARCHAR2(40)|0</data-type>
+    </column>
+    <column id="406" parent="78" name="FKLXMC">
+      <data-type>VARCHAR2(40)|0</data-type>
+    </column>
+    <column id="407" parent="78" name="FKXLMC">
+      <data-type>VARCHAR2(40)|0</data-type>
+    </column>
+    <column id="408" parent="79" name="UUID">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(255)|0</data-type>
+    </column>
+    <column id="409" parent="79" name="CREATE_TIME">
+      <data-type>TIMESTAMP(6)|0</data-type>
+    </column>
+    <column id="410" parent="79" name="DIRCTION">
+      <data-type>VARCHAR2(255)|0</data-type>
+    </column>
+    <column id="411" parent="79" name="GPS_NO">
+      <data-type>VARCHAR2(255)|0</data-type>
+    </column>
+    <column id="412" parent="79" name="LATITUDE">
+      <data-type>FLOAT(126)|0</data-type>
+    </column>
+    <column id="413" parent="79" name="LONGITUDE">
+      <data-type>FLOAT(126)|0</data-type>
+    </column>
+    <column id="414" parent="79" name="ONLINE_STATUS">
+      <data-type>VARCHAR2(255)|0</data-type>
+    </column>
+    <column id="415" parent="79" name="REPORT_TIME">
+      <data-type>TIMESTAMP(6)|0</data-type>
+    </column>
+    <column id="416" parent="79" name="SPEED">
+      <data-type>VARCHAR2(255)|0</data-type>
+    </column>
+    <column id="417" parent="80" name="JJBH">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(19)|0</data-type>
+    </column>
+    <column id="418" parent="80" name="BJXSMC">
+      <data-type>VARCHAR2(40)|0</data-type>
+    </column>
+    <column id="419" parent="80" name="BJDH">
+      <data-type>VARCHAR2(15)|0</data-type>
+    </column>
+    <column id="420" parent="80" name="BJHM">
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="421" parent="80" name="DYYHDZ">
+      <data-type>VARCHAR2(80)|0</data-type>
+    </column>
+    <column id="422" parent="80" name="DYYHHZ">
+      <data-type>VARCHAR2(80)|0</data-type>
+    </column>
+    <column id="423" parent="80" name="ZDXXDM">
+      <data-type>VARCHAR2(2)|0</data-type>
+    </column>
+    <column id="424" parent="80" name="JJRXM">
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="425" parent="80" name="BJSJ">
+      <data-type>DATE|0</data-type>
+    </column>
+    <column id="426" parent="80" name="BJRXM">
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="427" parent="80" name="BJRXB">
+      <data-type>VARCHAR2(2)|0</data-type>
+    </column>
+    <column id="428" parent="80" name="BJRLXDH">
+      <data-type>VARCHAR2(15)|0</data-type>
+    </column>
+    <column id="429" parent="80" name="FADZ">
+      <data-type>VARCHAR2(80)|0</data-type>
+    </column>
+    <column id="430" parent="80" name="GXDWMC">
+      <data-type>VARCHAR2(40)|0</data-type>
+    </column>
+    <column id="431" parent="80" name="XQMC">
+      <data-type>VARCHAR2(40)|0</data-type>
+    </column>
+    <column id="432" parent="80" name="JJLBMC">
+      <data-type>VARCHAR2(40)|0</data-type>
+    </column>
+    <column id="433" parent="80" name="JJLXMC">
+      <data-type>VARCHAR2(40)|0</data-type>
+    </column>
+    <column id="434" parent="80" name="JJXLMC">
+      <data-type>VARCHAR2(40)|0</data-type>
+    </column>
+    <column id="435" parent="80" name="JJXXMC">
+      <data-type>VARCHAR2(40)|0</data-type>
+    </column>
+    <column id="436" parent="80" name="BJNR">
+      <data-type>VARCHAR2(4000)|0</data-type>
+    </column>
+    <column id="437" parent="80" name="CLQK">
+      <data-type>VARCHAR2(2000)|0</data-type>
+    </column>
+    <column id="438" parent="80" name="CPH">
+      <data-type>VARCHAR2(80)|0</data-type>
+    </column>
+    <column id="439" parent="80" name="XDWZBX">
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="440" parent="80" name="YDWZBY">
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="441" parent="80" name="TIMESCOPE">
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="442" parent="80" name="CJDWDM">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(6)|0</data-type>
+    </column>
+    <column id="443" parent="80" name="CJDWMC">
+      <data-type>VARCHAR2(40)|0</data-type>
+    </column>
+    <column id="444" parent="80" name="SLDWMC">
+      <data-type>VARCHAR2(40)|0</data-type>
+    </column>
+    <column id="445" parent="80" name="CJZT">
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="446" parent="80" name="PFSJ">
+      <data-type>DATE|0</data-type>
+    </column>
+    <column id="447" parent="80" name="SLRXM">
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="448" parent="80" name="SLSJ">
+      <data-type>DATE|0</data-type>
+    </column>
+    <column id="449" parent="80" name="CJRXM">
+      <data-type>VARCHAR2(40)|0</data-type>
+    </column>
+    <column id="450" parent="80" name="GXQ">
+      <data-type>VARCHAR2(1)|0</data-type>
+    </column>
+    <column id="451" parent="81" name="JJBH">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(19)|0</data-type>
+    </column>
+    <column id="452" parent="81" name="BJXSMC">
+      <data-type>VARCHAR2(40)|0</data-type>
+    </column>
+    <column id="453" parent="81" name="BJDH">
+      <data-type>VARCHAR2(15)|0</data-type>
+    </column>
+    <column id="454" parent="81" name="BJHM">
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="455" parent="81" name="DYYHDZ">
+      <data-type>VARCHAR2(80)|0</data-type>
+    </column>
+    <column id="456" parent="81" name="DYYHHZ">
+      <data-type>VARCHAR2(80)|0</data-type>
+    </column>
+    <column id="457" parent="81" name="ZDXXDM">
+      <data-type>VARCHAR2(2)|0</data-type>
+    </column>
+    <column id="458" parent="81" name="JJRXM">
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="459" parent="81" name="BJSJ">
+      <data-type>DATE|0</data-type>
+    </column>
+    <column id="460" parent="81" name="BJRXM">
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="461" parent="81" name="BJRXB">
+      <data-type>VARCHAR2(2)|0</data-type>
+    </column>
+    <column id="462" parent="81" name="BJRLXDH">
+      <data-type>VARCHAR2(15)|0</data-type>
+    </column>
+    <column id="463" parent="81" name="FADZ">
+      <data-type>VARCHAR2(80)|0</data-type>
+    </column>
+    <column id="464" parent="81" name="GXDWMC">
+      <data-type>VARCHAR2(40)|0</data-type>
+    </column>
+    <column id="465" parent="81" name="XQMC">
+      <data-type>VARCHAR2(40)|0</data-type>
+    </column>
+    <column id="466" parent="81" name="JJLBMC">
+      <data-type>VARCHAR2(40)|0</data-type>
+    </column>
+    <column id="467" parent="81" name="JJLXMC">
+      <data-type>VARCHAR2(40)|0</data-type>
+    </column>
+    <column id="468" parent="81" name="JJXLMC">
+      <data-type>VARCHAR2(40)|0</data-type>
+    </column>
+    <column id="469" parent="81" name="JJXXMC">
+      <data-type>VARCHAR2(40)|0</data-type>
+    </column>
+    <column id="470" parent="81" name="BJNR">
+      <data-type>VARCHAR2(4000)|0</data-type>
+    </column>
+    <column id="471" parent="81" name="CLQK">
+      <data-type>VARCHAR2(2000)|0</data-type>
+    </column>
+    <column id="472" parent="81" name="CPH">
+      <data-type>VARCHAR2(80)|0</data-type>
+    </column>
+    <column id="473" parent="81" name="XDWZBX">
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="474" parent="81" name="YDWZBY">
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="475" parent="81" name="TIMESCOPE">
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="476" parent="82" name="ID">
+      <data-type>VARCHAR2(4000)|0</data-type>
+    </column>
+    <column id="477" parent="82" name="NAME">
+      <data-type>VARCHAR2(100)|0</data-type>
+    </column>
+    <column id="478" parent="82" name="YOFFSET">
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="479" parent="82" name="XOFFSET">
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="480" parent="82" name="LAYERTYPE">
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="481" parent="82" name="SPELL">
+      <data-type>VARCHAR2(100)|0</data-type>
+    </column>
+    <column id="482" parent="82" name="PHONE">
+      <data-type>VARCHAR2(50)|0</data-type>
+    </column>
+    <column id="483" parent="83" name="ID">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(6)|0</data-type>
+    </column>
+    <column id="484" parent="83" name="XM">
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="485" parent="83" name="MM">
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="486" parent="83" name="BC">
+      <data-type>VARCHAR2(8)|0</data-type>
+    </column>
+    <column id="487" parent="83" name="XTSF">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(16)|0</data-type>
+    </column>
+    <column id="488" parent="83" name="DJRQ">
+      <data-type>DATE|0</data-type>
+    </column>
+    <column id="489" parent="83" name="ZXBZ">
+      <data-type>VARCHAR2(2)|0</data-type>
+    </column>
+    <column id="490" parent="83" name="ZXRQ">
+      <data-type>DATE|0</data-type>
+    </column>
+    <column id="491" parent="83" name="GUID">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(18)|0</data-type>
+    </column>
+    <column id="492" parent="83" name="PX">
+      <data-type>VARCHAR2(6)|0</data-type>
+    </column>
+    <column id="493" parent="84" name="XH">
+      <data-type>VARCHAR2(10)|0</data-type>
+    </column>
+    <column id="494" parent="84" name="LX">
+      <data-type>VARCHAR2(3)|0</data-type>
+    </column>
+    <column id="495" parent="84" name="TH">
+      <data-type>VARCHAR2(2)|0</data-type>
+    </column>
+    <column id="496" parent="84" name="SSDWBH">
+      <data-type>VARCHAR2(6)|0</data-type>
+    </column>
+    <column id="497" parent="84" name="FJHM">
+      <data-type>VARCHAR2(15)|0</data-type>
+    </column>
+    <column id="498" parent="84" name="ZHFJ">
+      <data-type>VARCHAR2(15)|0</data-type>
+    </column>
+    <column id="499" parent="84" name="NXDH">
+      <data-type>VARCHAR2(15)|0</data-type>
+    </column>
+    <column id="500" parent="84" name="BZ">
+      <data-type>VARCHAR2(16)|0</data-type>
+    </column>
+    <column id="501" parent="84" name="GUID">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(18)|0</data-type>
+    </column>
+    <column id="502" parent="84" name="ZCIP">
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="503" parent="84" name="SSDW">
+      <data-type>VARCHAR2(40)|0</data-type>
+    </column>
+    <column id="504" parent="84" name="QY">
+      <data-type>VARCHAR2(40)|0</data-type>
+    </column>
+    <column id="505" parent="84" name="LWZT">
+      <data-type>VARCHAR2(2)|0</data-type>
+    </column>
+    <column id="506" parent="84" name="ZTSJ">
+      <data-type>DATE|0</data-type>
+    </column>
+    <column id="507" parent="84" name="ZXBZ">
+      <data-type>VARCHAR2(2)|0</data-type>
+    </column>
+    <column id="508" parent="84" name="DJR">
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="509" parent="84" name="DJRQ">
+      <data-type>DATE|0</data-type>
+    </column>
+    <column id="510" parent="84" name="ZXDJR">
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="511" parent="84" name="ZXRQ">
+      <data-type>DATE|0</data-type>
+    </column>
+    <column id="512" parent="84" name="BEIJIAO">
+      <data-type>VARCHAR2(15)|0</data-type>
+    </column>
+    <argument id="513" parent="85">
+      <direction>RETURN</direction>
+      <data-type>VARCHAR2|0</data-type>
+    </argument>
+  </database-model>
+</dataSource>
